@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css"
+        integrity="sha512-AyOHI/tIMgoG+32apAs3OdqFowPSDqiz5vLcD2wdhBJ4J/xF1PI6UITcyhS5HCmsiioapRaONqYBvimxzFfnoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Validation Form</title>
+</head>
+<body>
+    <target.onevent = functionRef></event>
+    <div class="container">
+        <div class="header">
+
+            <!-- <h2 class="line-1 anim-typewriter">REGISTRATION FORM</h2> -->
+        </div>
+        <form action="" class="form" id="form" onsubmit="event.preventDefault(), detailSubmit()" >
+            <div class="form-control">
+                
+                <label for="">First name</label>
+                <input type="text" name="" id="firstname" placeholder="Enter full name" autocomplete="on" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">Last name</label>
+                <input type="text" name="" id="lastname" placeholder="Enter full name" autocomplete="on">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">E-mail</label>
+                <input type="email" name="" id="email" placeholder="Enter email address" autocomplete="on">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">Phone number</label>
+                <input type="mobile" name="" id="phone" placeholder="Enter phone number" autocomplete="on">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">Birthday</label>
+                <input type="date" name="" id="date" placeholder="Enter Birthday date"autocomplete="on" min=1 max=100 onchange="calculateAge()">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">age</label>
+                <input type="number" name="" id="age" placeholder="Your correct age is here " min=1 max=100 autocomplete="on">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error msg</small>
+            </div>
+            <div class="form-control">
+                <label for="">subject</label>
+                <input type="text" name="" id="subject" placeholder="Enter your subject"autocomplete="on">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <datalist id="subject">
+                    <option value="Operating Systems.">
+                    <option value="Artificial Intelligence.">
+                    <option value="Computer Architecture.">
+                    <option value="Machine Learning.">
+                    <option value="Computer Forensics">
+                    <option value="Microsoft">
+                </datalist></br>
+                <small>Error msg</small>
+            </div>
+            <input type="submit" value="Submit" name="" id="button" class="btn">
+        </form>
+    </div>
+
+    
+    <!-- <script src="JS.js"></script> -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <table class="tableborder"> <table id="table">
+        </br>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email id</th>
+                <th>phone number</th>
+                <th>birthdate</th>
+                <th>age</th>
+                <th>subject</th>
+                <th>onEdit</th>
+                <th>onDelete</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+<body>
+
+        <!-- <script src="script.js"></script> -->
+
+
+    
+  
+
+<script src="valid.js"></script>
+</html>
